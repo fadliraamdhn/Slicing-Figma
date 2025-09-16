@@ -1,0 +1,5 @@
+@theme inline {
+  --color-theme-c1: var(--theme-c1);
+  --color-theme-c2: var(--theme-c2);
+  --color-theme-c3: var(--theme-c3);
+}
