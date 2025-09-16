@@ -9,8 +9,9 @@ export const metadata: Metadata = {
     description: "Nextjs - Template",
 };
 
-export default function Login() {
-    const ua = headers().get("user-agent") || "";
+export default async function Login() {
+    const header = await headers();
+    const ua = header.get("user-agent") || "";
     const isMobile = isMobileDevice(ua);
 
     return isMobile ? <LoginMobile /> : <LoginDesktop />;
