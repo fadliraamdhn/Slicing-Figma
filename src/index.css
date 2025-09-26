@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --color-blueDark: #2F327D;
+  --color-orangeSmooth: #F48C06;
+  --color-blueSky: #65DAFF;
+  --color-orangeSky: #FFF2E1;
+  --color-base: #464646;
+  --color-footer: #252641;
+}
+
+@layer utilities {
+  .text-blueDark { color: var(--color-blueDark)};
+  .text-orangeSmooth { color: var(--color-orangeSmooth)};
+  .text-blueblueSky { color: var(--color-blueSky)};
+  .text-baseColor { color: var(--color-base);}
+
+  .bg-orangeSky { background-color: var(--color-orangeSky);}
+  .bg-orangeSmooth { background-color: var(--color-orangeSmooth);}
+  .bg-blueSky { background-color: var(--color-blueSky);}
+  .bg-blueDark {background-color: var(--color-blueDark);}
+  .bg-footer { background-color: var(--color-footer);}
+  .bd-blueSky { border-color: var(--color-blueSky);}
+}
