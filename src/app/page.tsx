@@ -7,5 +7,8 @@ export default async function Home() {
     const ua = header.get("user-agent") || "";
     const isMobile = isMobileDevice(ua);
 
-    return isMobile ? <HomeMobile /> : <HomeDesktop />;
+    // return isMobile ? <HomeMobile /> : <HomeDesktop />;
+    return (
+        <HomeDesktop />
+    )
 }
